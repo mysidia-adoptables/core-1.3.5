@@ -7,5 +7,7 @@
     },
     "license": "Apache 2",
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "php": "8.3|8.4"
+    }
 }

@@ -1,0 +1,17 @@
+# Disable directory browsing
+Options -Indexes
+
+# Block access to the vendor folder
+RedirectMatch 403 ^/vendor(/|$)
+
+# Block direct access to inc/config.php
+<Files "config.php">
+    <If "%{REQUEST_URI} =~ m#^/inc/config\.php$#">
+        Require all denied
+    </If>
+</Files>
+
+# Block composer files
+<FilesMatch "^(composer\.json|composer\.lock)$">
+    Require all denied
+</FilesMatch>

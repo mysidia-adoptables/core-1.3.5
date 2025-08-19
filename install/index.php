@@ -2,7 +2,7 @@
 
 //Max Volume Installation Wizard
 define("SUBDIR", "Install");
-$step = $_GET["step"];
+$step = $_GET["step"] ?? 0;
 $step = preg_replace("/[^a-zA-Z0-9s]/", "", (string) $step);
 $domain = $_SERVER['HTTP_HOST'];
 $scriptPath = str_replace("/install/index.php", "", $_SERVER['SCRIPT_NAME']);

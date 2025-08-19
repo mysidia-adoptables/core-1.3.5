@@ -41,6 +41,7 @@ abstract class MapSet extends Set
      * @access public
      * @return Void
      */
+    #[\Override]
     public function clear()
     {
         $this->map->clear();
@@ -51,6 +52,7 @@ abstract class MapSet extends Set
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function isEmpty()
     {
         return $this->map->isEmpty();

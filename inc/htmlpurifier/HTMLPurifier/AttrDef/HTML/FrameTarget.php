@@ -12,6 +12,7 @@ class HTMLPurifier_AttrDef_HTML_FrameTarget extends HTMLPurifier_AttrDef_Enum
     {
     }
 
+    #[\Override]
     public function validate($string, $config, $context)
     {
         if ($this->valid_values === false) {

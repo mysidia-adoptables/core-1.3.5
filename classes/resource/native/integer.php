@@ -25,17 +25,17 @@ final class Integer extends Number
     /**
      * Size constant, specifies the size an integer value occupies.
     */
-    public const Size = 32;
+    public const int Size = 32;
 
     /**
      * MinValue constant, an integer cannot contain number less than -2147483648.
     */
-    public const MinValue = -2147483648;
+    public const int MinValue = -2147483648;
 
     /**
      * MaxValue constant, an integer cannot contain number greater than 2147483647.
     */
-    public const MaxValue = 2147483647;
+    public const int MaxValue = 2147483647;
 
 
     /**
@@ -117,6 +117,7 @@ final class Integer extends Number
      * @access public
      * @return Byte
      */
+    #[\Override]
     public function toByte()
     {
         if ($this->value < Byte::MinValue or $this->value > Byte::MaxValue) {
@@ -130,6 +131,7 @@ final class Integer extends Number
      * @access public
      * @return Short
      */
+    #[\Override]
     public function toShort()
     {
         if ($this->value < Short::MinValue or $this->value > Short::MaxValue) {

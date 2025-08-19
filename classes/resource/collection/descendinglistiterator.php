@@ -33,6 +33,7 @@ class DescendingListIterator extends LinkedListIterator
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function hasNext()
     {
         return $this->hasPrevious();
@@ -43,6 +44,7 @@ class DescendingListIterator extends LinkedListIterator
      * @access public
      * @return Objective
      */
+    #[\Override]
     public function next()
     {
         return $this->previous();
@@ -53,6 +55,7 @@ class DescendingListIterator extends LinkedListIterator
      * @access public
      * @return Void
      */
+    #[\Override]
     public function remove()
     {
         parent::remove();

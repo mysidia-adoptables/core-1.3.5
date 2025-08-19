@@ -9,11 +9,13 @@ class HTMLPurifier_DefinitionCache_Decorator_Cleanup extends
 {
     public $name = 'Cleanup';
 
+    #[\Override]
     public function copy()
     {
         return new HTMLPurifier_DefinitionCache_Decorator_Cleanup();
     }
 
+    #[\Override]
     public function add($def, $config)
     {
         $status = parent::add($def, $config);
@@ -23,6 +25,7 @@ class HTMLPurifier_DefinitionCache_Decorator_Cleanup extends
         return $status;
     }
 
+    #[\Override]
     public function set($def, $config)
     {
         $status = parent::set($def, $config);
@@ -32,6 +35,7 @@ class HTMLPurifier_DefinitionCache_Decorator_Cleanup extends
         return $status;
     }
 
+    #[\Override]
     public function replace($def, $config)
     {
         $status = parent::replace($def, $config);
@@ -41,6 +45,7 @@ class HTMLPurifier_DefinitionCache_Decorator_Cleanup extends
         return $status;
     }
 
+    #[\Override]
     public function get($config)
     {
         $ret = parent::get($config);

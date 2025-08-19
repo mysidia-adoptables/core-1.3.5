@@ -36,6 +36,7 @@ class EntryTreeSet extends MapSet
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function contains(Objective $object)
     {
         if (!($object instanceof MapEntry)) {
@@ -63,6 +64,7 @@ class EntryTreeSet extends MapSet
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function remove(Objective $object)
     {
         if (!($object instanceof MapEntry)) {
@@ -85,6 +87,7 @@ class EntryTreeSet extends MapSet
      * @access public
      * @return Settable
      */
+    #[\Override]
     public function subSet(Objective $fromElement, Objective $toElement)
     {
         return false;

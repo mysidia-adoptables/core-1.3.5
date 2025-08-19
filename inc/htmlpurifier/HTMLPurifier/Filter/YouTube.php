@@ -4,6 +4,7 @@ class HTMLPurifier_Filter_YouTube extends HTMLPurifier_Filter
 {
     public $name = 'YouTube';
 
+    #[\Override]
     public function preFilter($html, $config, $context)
     {
         $pre_regex = '#<object[^>]+>.+?'.
@@ -12,6 +13,7 @@ class HTMLPurifier_Filter_YouTube extends HTMLPurifier_Filter
         return preg_replace($pre_regex, $pre_replace, (string) $html);
     }
 
+    #[\Override]
     public function postFilter($html, $config, $context)
     {
         $post_regex = '#<span class="youtube-embed">((?:v|cp)/[A-Za-z0-9\-_=]+)</span>#';

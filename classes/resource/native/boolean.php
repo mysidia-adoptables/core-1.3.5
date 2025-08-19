@@ -24,17 +24,17 @@ final class Boolean extends MysObject implements Comparable, Primitive
     /**
      * Size constant, specifies the size a boolean value occupies.
     */
-    public const Size = 8;
+    public const int Size = 8;
 
     /**
      * BooleanTrue constant, defines the True value for Boolean.
     */
-    public const BooleanTRUE = true;
+    public const bool BooleanTRUE = true;
 
     /**
      * BooleanFALSE constant, defines the False value for Boolean.
     */
-    public const BooleanFALSE = false;
+    public const bool BooleanFALSE = false;
 
     /**
      * The value property, which stores the primitive value for this Boolean object.
@@ -87,6 +87,7 @@ final class Boolean extends MysObject implements Comparable, Primitive
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return (string)$this->value;

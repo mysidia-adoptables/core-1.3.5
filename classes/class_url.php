@@ -21,7 +21,7 @@ final class URL extends MysObject
     /**
      * REGEX constant, it is used to identify valid and invalid url.
     */
-    public const REGEX = "/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i";
+    public const string REGEX = "/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i";
 
     /**
      * The scheme property, stores the scheme of the url.
@@ -212,6 +212,7 @@ final class URL extends MysObject
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return $this->host.$this->path.$this->query.$this->fragment;

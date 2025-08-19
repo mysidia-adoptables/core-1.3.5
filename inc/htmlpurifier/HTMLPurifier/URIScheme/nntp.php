@@ -8,6 +8,7 @@ class HTMLPurifier_URIScheme_nntp extends HTMLPurifier_URIScheme
     public $default_port = 119;
     public $browsable = false;
 
+    #[\Override]
     public function validate(&$uri, $config, $context)
     {
         parent::validate($uri, $config, $context);

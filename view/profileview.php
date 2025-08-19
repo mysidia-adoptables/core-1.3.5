@@ -5,6 +5,7 @@ use Resource\Collection\LinkedHashMap;
 
 class ProfileView extends View
 {
+    #[\Override]
     public function index()
     {
         $pagination = $this->getField("pagination");

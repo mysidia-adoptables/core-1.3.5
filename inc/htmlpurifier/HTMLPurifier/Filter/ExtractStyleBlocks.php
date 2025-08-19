@@ -38,6 +38,7 @@ class HTMLPurifier_Filter_ExtractStyleBlocks extends HTMLPurifier_Filter
      * Removes inline <style> tags from HTML, saves them for later use
      * @todo Extend to indicate non-text/css style blocks
      */
+    #[\Override]
     public function preFilter($html, $config, $context)
     {
         $tidy = $config->get('Filter.ExtractStyleBlocks.TidyImpl');

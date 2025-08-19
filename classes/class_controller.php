@@ -177,6 +177,7 @@ abstract class Controller extends MysObject
      * @access public
      * @return string
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string)$this->name;

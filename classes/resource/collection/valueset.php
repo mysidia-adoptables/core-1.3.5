@@ -35,6 +35,7 @@ class ValueSet extends ValueMapSet
      * @access public
      * @return ValueIterator
      */
+    #[\Override]
     public function iterator()
     {
         return $this->map->valueIterator();
@@ -46,6 +47,7 @@ class ValueSet extends ValueMapSet
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function remove(Objective $object)
     {
         return $this->map->removeKey($object);

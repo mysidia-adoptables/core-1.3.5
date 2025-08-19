@@ -5,6 +5,7 @@ use Resource\Collection\LinkedHashMap;
 
 class ACPOwnedadoptView extends View
 {
+    #[\Override]
     public function index()
     {
         parent::index();

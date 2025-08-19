@@ -33,6 +33,7 @@ abstract class Smarty_Resource_Uncompiled extends Smarty_Resource
      * @param Smarty_Template_Compiled $compiled  compiled object
      * @param Smarty_Internal_Template $_template template object (is ignored)
      */
+    #[\Override]
     public function populateCompiledFilepath(Smarty_Template_Compiled $compiled, Smarty_Internal_Template $_template)
     {
         $compiled->filepath = false;

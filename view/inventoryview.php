@@ -4,6 +4,7 @@ use Resource\Collection\LinkedList;
 
 class InventoryView extends View
 {
+    #[\Override]
     public function index()
     {
         $mysidia = Registry::get("mysidia");

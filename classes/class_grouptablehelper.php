@@ -47,6 +47,7 @@ class GroupTableHelper extends TableHelper
      * @access protected
      * @return Link
      */
+    #[\Override]
     protected function getDeleteLink($param)
     {
         if ($param == 1 or $param == 3) {
@@ -60,6 +61,7 @@ class GroupTableHelper extends TableHelper
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return "This is an instance of Mysidia GroupTableHelper class.";

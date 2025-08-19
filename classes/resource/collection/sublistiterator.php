@@ -46,6 +46,7 @@ class SubListIterator extends ListIterator
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function hasNext()
     {
         return ($this->nextIndex() < $this->size);
@@ -56,6 +57,7 @@ class SubListIterator extends ListIterator
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function hasPrevious()
     {
         return ($this->previousIndex() >= 0);

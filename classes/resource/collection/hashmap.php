@@ -135,6 +135,7 @@ class HashMap extends Map
      * @access public
      * @return Void
      */
+    #[\Override]
     public function clear()
     {
         $entries = $this->entries;
@@ -150,6 +151,7 @@ class HashMap extends Map
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function containsKey(Objective $key = null)
     {
         return ($this->getEntry($key) != null);
@@ -179,6 +181,7 @@ class HashMap extends Map
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function containsValue(Objective $value = null)
     {
         if ($value == null) {
@@ -276,6 +279,7 @@ class HashMap extends Map
      * @access public
      * @return Objective
      */
+    #[\Override]
     public function get(Objective $key)
     {
         if ($key == null) {
@@ -392,6 +396,7 @@ class HashMap extends Map
      * @access public
      * @return KeySet
      */
+    #[\Override]
     public function keySet()
     {
         $keySet = ($this->keySet == null) ? new KeySet($this) : $this->keySet;
@@ -441,6 +446,7 @@ class HashMap extends Map
      * @access public
      * @return Void
      */
+    #[\Override]
     public function putAll(Mappable $map)
     {
         $size = $map->size();
@@ -492,6 +498,7 @@ class HashMap extends Map
      * @access public
      * @return Objective
      */
+    #[\Override]
     public function remove(Objective $key = null)
     {
         $entry = $this->removeKey($key);
@@ -588,6 +595,7 @@ class HashMap extends Map
      * @access public
      * @return Int
      */
+    #[\Override]
     public function size()
     {
         return $this->size;
@@ -633,6 +641,7 @@ class HashMap extends Map
      * @access public
      * @return ValueSet
      */
+    #[\Override]
     public function valueSet()
     {
         $valueSet = ($this->valueSet == null) ? new ValueSet($this) : $this->valueSet;

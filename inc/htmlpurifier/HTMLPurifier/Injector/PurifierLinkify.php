@@ -10,6 +10,7 @@ class HTMLPurifier_Injector_PurifierLinkify extends HTMLPurifier_Injector
     public $docURL;
     public $needed = ['a' => ['href']];
 
+    #[\Override]
     public function prepare($config, $context)
     {
         $this->docURL = $config->get('AutoFormat.PurifierLinkify.DocURL');

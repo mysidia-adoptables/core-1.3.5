@@ -55,6 +55,7 @@ abstract class Queue extends Collection implements Queueable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function addAll(Collective $collection)
     {
         if ($collection == $this) {
@@ -75,6 +76,7 @@ abstract class Queue extends Collection implements Queueable
      * @access public
      * @return Void
      */
+    #[\Override]
     public function clear()
     {
         while ($this->poll() != null);

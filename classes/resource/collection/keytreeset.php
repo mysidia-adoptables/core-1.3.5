@@ -132,6 +132,7 @@ class KeyTreeSet extends KeyMapSet implements NavigableSettable
      * @access public
      * @return KeyIterator
      */
+    #[\Override]
     public function iterator()
     {
         return $this->map->keyIterator();
@@ -186,6 +187,7 @@ class KeyTreeSet extends KeyMapSet implements NavigableSettable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function remove(Objective $object)
     {
         $size = $this->size();
@@ -200,6 +202,7 @@ class KeyTreeSet extends KeyMapSet implements NavigableSettable
      * @access public
      * @return Settable
      */
+    #[\Override]
     public function subSet(Objective $fromElement, Objective $toElement)
     {
         return $this->subSets($fromElement, true, $toElement, false);

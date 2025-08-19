@@ -5,6 +5,7 @@
  */
 class HTMLPurifier_AttrDef_HTML_Class extends HTMLPurifier_AttrDef_HTML_Nmtokens
 {
+    #[\Override]
     protected function split($string, $config, $context)
     {
         // really, this twiddle should be lazy loaded
@@ -15,6 +16,7 @@ class HTMLPurifier_AttrDef_HTML_Class extends HTMLPurifier_AttrDef_HTML_Nmtokens
             return preg_split('/\s+/', (string) $string);
         }
     }
+    #[\Override]
     protected function filter($tokens, $config, $context)
     {
         $allowed = $config->get('Attr.AllowedClasses');

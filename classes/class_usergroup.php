@@ -66,6 +66,7 @@ class Usergroup extends MysObject
         $mysidia->db->delete("groups", "gid ='{$this->gid}'");
     }
 
+    #[\Override]
     public function __toString(): string
     {
         return (string) $this->groupname;

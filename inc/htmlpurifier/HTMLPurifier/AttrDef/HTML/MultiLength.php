@@ -8,6 +8,7 @@
  */
 class HTMLPurifier_AttrDef_HTML_MultiLength extends HTMLPurifier_AttrDef_HTML_Length
 {
+    #[\Override]
     public function validate($string, $config, $context)
     {
 

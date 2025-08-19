@@ -55,6 +55,7 @@ class Smarty_Config_Source extends Smarty_Template_Source
      * @param mixed  $value         newly assigned value (not check for correct type)
      * @throws SmartyException when the given property name is not valid
      */
+    #[\Override]
     public function __set($property_name, $value)
     {
         $this->$property_name = match ($property_name) {
@@ -69,6 +70,7 @@ class Smarty_Config_Source extends Smarty_Template_Source
      * @param string $property_name valid: content, timestamp, exists
      * @throws SmartyException when the given property name is not valid
      */
+    #[\Override]
     public function __get($property_name)
     {
         switch ($property_name) {

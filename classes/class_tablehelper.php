@@ -192,6 +192,7 @@ class TableHelper extends GUIHelper
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string) new String("This is an instance of Mysidia TableHelper class.");

@@ -9,6 +9,7 @@ class HTMLPurifier_URIScheme_ftp extends HTMLPurifier_URIScheme
     public $browsable = true; // usually
     public $hierarchical = true;
 
+    #[\Override]
     public function validate(&$uri, $config, $context)
     {
         parent::validate($uri, $config, $context);

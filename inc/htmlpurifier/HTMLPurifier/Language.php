@@ -39,16 +39,13 @@ class HTMLPurifier_Language
      */
     public $_loaded = false;
 
-    /**
-     * Instances of HTMLPurifier_Config and HTMLPurifier_Context
-     */
-    protected $config;
-    protected $context;
-
-    public function __construct($config, $context)
-    {
-        $this->config  = $config;
-        $this->context = $context;
+    public function __construct(
+        /**
+         * Instances of HTMLPurifier_Config and HTMLPurifier_Context
+         */
+        protected $config,
+        protected $context
+    ) {
     }
 
     /**

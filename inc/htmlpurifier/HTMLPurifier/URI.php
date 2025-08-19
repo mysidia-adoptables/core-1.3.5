@@ -11,25 +11,15 @@
 class HTMLPurifier_URI
 {
     public $scheme;
-    public $userinfo;
-    public $host;
     public $port;
-    public $path;
-    public $query;
-    public $fragment;
 
     /**
      * @note Automatically normalizes scheme and port
      */
-    public function __construct($scheme, $userinfo, $host, $port, $path, $query, $fragment)
+    public function __construct($scheme, public $userinfo, public $host, $port, public $path, public $query, public $fragment)
     {
         $this->scheme = is_null($scheme) || ctype_lower($scheme) ? $scheme : strtolower($scheme);
-        $this->userinfo = $userinfo;
-        $this->host = $host;
         $this->port = is_null($port) ? $port : (int) $port;
-        $this->path = $path;
-        $this->query = $query;
-        $this->fragment = $fragment;
     }
 
     /**

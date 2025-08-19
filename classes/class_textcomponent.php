@@ -93,6 +93,7 @@ abstract class TextComponent extends InputComponent
      * @access public
      * @return String
      */
+    #[\Override]
     public function render()
     {
         if ($this->renderer->getStatus() == "ready") {
@@ -107,6 +108,7 @@ abstract class TextComponent extends InputComponent
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string) new String("This is the TextComponent Class.");

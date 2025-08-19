@@ -9,6 +9,7 @@ class RegisterValidator extends UserValidator
         parent::__construct($user, $value, $action);
     }
 
+    #[\Override]
     public function validate($action = "", $data = "")
     {
         // The core method validate, it acts like a controller and sends requests to different private methods based on the action
@@ -30,6 +31,7 @@ class RegisterValidator extends UserValidator
         }
     }
 
+    #[\Override]
     protected function usernamevalidate($username = "")
     {
         // The username validator, note its a bit complicate here due to the different mechanism of username check for register and other validators
@@ -52,6 +54,7 @@ class RegisterValidator extends UserValidator
         }
     }
 
+    #[\Override]
     protected function passwordvalidate($password = "")
     {
         $mysidia = Registry::get("mysidia");
@@ -68,6 +71,7 @@ class RegisterValidator extends UserValidator
         }
     }
 
+    #[\Override]
     protected function emailvalidate($email = "")
     {
         $lang = Registry::get("lang");

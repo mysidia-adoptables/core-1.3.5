@@ -224,6 +224,7 @@ class Header extends Widget
      * @access public
      * @return Header
      */
+    #[\Override]
     public function render()
     {
         return $this;

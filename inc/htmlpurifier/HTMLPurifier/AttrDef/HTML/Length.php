@@ -9,6 +9,7 @@
 
 class HTMLPurifier_AttrDef_HTML_Length extends HTMLPurifier_AttrDef_HTML_Pixels
 {
+    #[\Override]
     public function validate($string, $config, $context)
     {
 

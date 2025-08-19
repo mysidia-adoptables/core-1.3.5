@@ -24,6 +24,7 @@ class MemberCreator extends UserCreator
         return $gid;
     }
 
+    #[\Override]
     public function getgroupcategory()
     {
         // This feature will be fully implemented in Mys v1.3.3 or v1.3.4.

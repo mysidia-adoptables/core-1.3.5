@@ -57,6 +57,7 @@ class Smarty_Internal_Resource_PHP extends Smarty_Resource_Uncompiled
      * @param Smarty_Template_Source $source source object
      * @return void
      */
+    #[\Override]
     public function populateTimestamp(Smarty_Template_Source $source)
     {
         $source->timestamp = @filemtime($source->filepath);

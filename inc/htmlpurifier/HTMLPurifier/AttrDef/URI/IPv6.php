@@ -8,6 +8,7 @@
  */
 class HTMLPurifier_AttrDef_URI_IPv6 extends HTMLPurifier_AttrDef_URI_IPv4
 {
+    #[\Override]
     public function validate($aIP, $config, $context)
     {
 

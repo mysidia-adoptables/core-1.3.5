@@ -30,6 +30,7 @@ class HTMLPurifier_Lexer_PEARSax3 extends HTMLPurifier_Lexer
     private $parent_handler;
     private $stack = [];
 
+    #[\Override]
     public function tokenizeHTML($string, $config, $context)
     {
 

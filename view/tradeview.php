@@ -6,6 +6,7 @@ use Resource\Collection\LinkedHashMap;
 
 class TradeView extends View
 {
+    #[\Override]
     public function index()
     {
         $document = $this->document;

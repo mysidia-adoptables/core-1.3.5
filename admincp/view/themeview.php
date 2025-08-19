@@ -6,6 +6,7 @@ use Resource\Collection\LinkedHashMap;
 
 class ACPThemeView extends View
 {
+    #[\Override]
     public function index()
     {
         parent::index();

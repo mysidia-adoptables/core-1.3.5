@@ -35,6 +35,7 @@ class ValueTreeSet extends ValueMapSet
      * @access public
      * @return ValueTreeIterator
      */
+    #[\Override]
     public function iterator()
     {
         return new ValueTreeIterator($this->map, $this->map->getFirstEntry());
@@ -46,6 +47,7 @@ class ValueTreeSet extends ValueMapSet
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function remove(Objective $object)
     {
         for ($entry = $this->map->getFirstEntry(); $entry != null; $entry = $this->map->successor($entry)) {

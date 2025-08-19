@@ -42,6 +42,7 @@ class ImmutableEntry extends Entry
      * @access public
      * @return Int
      */
+    #[\Override]
     public function hashCode()
     {
         $keyHash = ($this->key == null) ? 0 : $this->key->hashCode();
@@ -56,6 +57,7 @@ class ImmutableEntry extends Entry
      * @access public
      * @return Objective
      */
+    #[\Override]
     public function setValue(Objective $value): never
     {
         throw new UnsupportedOperationException();

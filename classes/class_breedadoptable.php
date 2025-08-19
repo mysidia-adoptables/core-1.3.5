@@ -83,6 +83,7 @@ class BreedAdoptable extends Adoptable
         return $this->available;
     }
 
+    #[\Override]
     protected function save($field, $value)
     {
         $mysidia = Registry::get("mysidia");

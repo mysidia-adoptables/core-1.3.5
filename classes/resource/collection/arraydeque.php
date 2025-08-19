@@ -154,6 +154,7 @@ class ArrayDeque extends Collection implements Dequeable
      * @access public
      * @return Void
      */
+    #[\Override]
     public function clear()
     {
         $head = $this->head;
@@ -175,6 +176,7 @@ class ArrayDeque extends Collection implements Dequeable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function contains(Objective $object)
     {
         if ($object == null) {
@@ -374,6 +376,7 @@ class ArrayDeque extends Collection implements Dequeable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function isEmpty()
     {
         return ($this->head == $this->tail);
@@ -533,6 +536,7 @@ class ArrayDeque extends Collection implements Dequeable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function remove(Objective $object = null)
     {
         $this->removeFirst($object);
@@ -600,6 +604,7 @@ class ArrayDeque extends Collection implements Dequeable
      * @access public
      * @return Array
      */
+    #[\Override]
     public function toArray()
     {
         $array = $this->getArray();

@@ -82,6 +82,7 @@ class ArrayList extends Lists
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function addAll(Collective $collection)
     {
         $iterator = $collection->iterator();
@@ -97,6 +98,7 @@ class ArrayList extends Lists
      * @access public
      * @return Void
      */
+    #[\Override]
     public function clear()
     {
         $this->size = 0;
@@ -109,6 +111,7 @@ class ArrayList extends Lists
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function contains(Objective $object)
     {
         return ($this->indexOf($object) >= 0);
@@ -191,6 +194,7 @@ class ArrayList extends Lists
      * @access public
      * @return Int
      */
+    #[\Override]
     public function indexOf(Objective $object)
     {
         if ($object == null) {
@@ -235,6 +239,7 @@ class ArrayList extends Lists
      * @access public
      * @return Void
      */
+    #[\Override]
     public function insertAll($index, Collective $collection)
     {
         $this->rangeCheck($index);
@@ -258,6 +263,7 @@ class ArrayList extends Lists
      * @access public
      * @return Int
      */
+    #[\Override]
     public function lastIndexOf(Objective $object)
     {
         if ($object == null) {
@@ -283,6 +289,7 @@ class ArrayList extends Lists
      * @access public
      * @return Void
      */
+    #[\Override]
     public function removeRange($fromIndex, $toIndex)
     {
         $this->rangeCheck($index);
@@ -328,6 +335,7 @@ class ArrayList extends Lists
      * @access public
      * @return Array
      */
+    #[\Override]
     public function toArray()
     {
         $this->trimSize();

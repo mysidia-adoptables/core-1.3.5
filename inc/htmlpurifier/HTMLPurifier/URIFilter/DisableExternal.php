@@ -4,6 +4,7 @@ class HTMLPurifier_URIFilter_DisableExternal extends HTMLPurifier_URIFilter
 {
     public $name = 'DisableExternal';
     protected $ourHostParts = false;
+    #[\Override]
     public function prepare($config)
     {
         $our_host = $config->getDefinition('URI')->host;

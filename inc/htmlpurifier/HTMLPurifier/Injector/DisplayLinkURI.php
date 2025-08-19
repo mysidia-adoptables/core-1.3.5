@@ -12,6 +12,7 @@ class HTMLPurifier_Injector_DisplayLinkURI extends HTMLPurifier_Injector
     {
     }
 
+    #[\Override]
     public function handleEnd(&$token)
     {
         if (isset($token->start->attr['href'])) {

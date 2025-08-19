@@ -232,6 +232,7 @@ class Smarty_Internal_CacheResource_File extends Smarty_CacheResource
      * @param Smarty_Template_Cached $cached cached object
      * @return booelan true or false if cache is locked
      */
+    #[\Override]
     public function hasLock(Smarty $smarty, Smarty_Template_Cached $cached)
     {
         if (version_compare(PHP_VERSION, '5.3.0', '>=')) {
@@ -249,6 +250,7 @@ class Smarty_Internal_CacheResource_File extends Smarty_CacheResource
      * @param Smarty $smarty Smarty object
      * @param Smarty_Template_Cached $cached cached object
      */
+    #[\Override]
     public function acquireLock(Smarty $smarty, Smarty_Template_Cached $cached)
     {
         $cached->is_locked = true;
@@ -261,6 +263,7 @@ class Smarty_Internal_CacheResource_File extends Smarty_CacheResource
      * @param Smarty $smarty Smarty object
      * @param Smarty_Template_Cached $cached cached object
      */
+    #[\Override]
     public function releaseLock(Smarty $smarty, Smarty_Template_Cached $cached)
     {
         $cached->is_locked = false;

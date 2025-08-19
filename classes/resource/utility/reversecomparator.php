@@ -72,6 +72,7 @@ class ReverseComparator extends MysObject implements Comparative
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function equals(Objective $object)
     {
         return ($object == $this or ($object instanceof ReverseComparator and $this->comparator->equals($object->comparator())));
@@ -83,6 +84,7 @@ class ReverseComparator extends MysObject implements Comparative
      * @access public
      * @return Int
      */
+    #[\Override]
     public function hashCode()
     {
         return (-1 * $this->comparator->hashCode());

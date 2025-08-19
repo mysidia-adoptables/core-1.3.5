@@ -46,6 +46,7 @@ class Footer extends Widget
      * @access protected
      * @return Void
      */
+    #[\Override]
     protected function setDivision(GUIComponent $module)
     {
         if (!$this->division) {

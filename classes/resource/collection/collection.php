@@ -125,6 +125,7 @@ abstract class Collection extends MysObject implements Collective
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function hashCode()
     {
         return null;
@@ -217,6 +218,7 @@ abstract class Collection extends MysObject implements Collective
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         $iterator = $this->iterator();

@@ -25,17 +25,17 @@ final class Long extends Number
     /**
      * Size constant, specifies the size a long value occupies.
     */
-    public const Size = 64;
+    public const int Size = 64;
 
     /**
      * MinValue constant, a Long cannot contain number less than -9223372036854775808.
     */
-    public const MinValue = -9223372036854775808;
+    public const float MinValue = -9223372036854775808;
 
     /**
      * MaxValue constant, a Long cannot contain number greater than 9223372036854775807.
     */
-    public const MaxValue = 9223372036854775807;
+    public const int MaxValue = 9223372036854775807;
 
 
     /**
@@ -106,6 +106,7 @@ final class Long extends Number
      * @access public
      * @return Byte
      */
+    #[\Override]
     public function toByte()
     {
         if ($this->value < Byte::MinValue or $this->value > Byte::MaxValue) {
@@ -119,6 +120,7 @@ final class Long extends Number
      * @access public
      * @return Short
      */
+    #[\Override]
     public function toShort()
     {
         if ($this->value < Short::MinValue or $this->value > Short::MaxValue) {
@@ -132,6 +134,7 @@ final class Long extends Number
      * @access public
      * @return Integer
      */
+    #[\Override]
     public function toInteger()
     {
         if ($this->value < Integer::MinValue or $this->value > Integer::MaxValue) {

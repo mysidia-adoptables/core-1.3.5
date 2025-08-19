@@ -448,6 +448,7 @@ abstract class GUIContainer extends GUIComponent
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function render()
     {
         if ($this->renderer->getStatus() == "ready") {
@@ -464,6 +465,7 @@ abstract class GUIContainer extends GUIComponent
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return (string) new MysString("This is The GUIContainer class.");

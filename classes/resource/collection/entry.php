@@ -56,6 +56,7 @@ abstract class Entry extends MysObject
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function equals(Objective $object)
     {
         if (!($object instanceof Entry)) {
@@ -122,6 +123,7 @@ abstract class Entry extends MysObject
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return (string) new MysString("{$this->key} => {$this->value}");

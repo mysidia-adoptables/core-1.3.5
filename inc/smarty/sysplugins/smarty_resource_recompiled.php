@@ -25,6 +25,7 @@ abstract class Smarty_Resource_Recompiled extends Smarty_Resource
      * @param Smarty_Internal_Template $_template template object
      * @return void
      */
+    #[\Override]
     public function populateCompiledFilepath(Smarty_Template_Compiled $compiled, Smarty_Internal_Template $_template)
     {
         $compiled->filepath = false;

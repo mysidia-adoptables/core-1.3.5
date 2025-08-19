@@ -341,6 +341,7 @@ abstract class GUIComponent extends GUI implements Renderable
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return (string) new MysString("This is The GUIComponent Class.");

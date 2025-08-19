@@ -36,6 +36,7 @@ class EntrySet extends MapSet
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function contains(Objective $object)
     {
         if (!($object instanceof MapEntry)) {
@@ -62,6 +63,7 @@ class EntrySet extends MapSet
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function remove(Objective $object)
     {
         if (!($object instanceof Entry)) {

@@ -25,17 +25,17 @@ final class Short extends Number
     /**
      * Size constant, specifies the size a short value occupies.
     */
-    public const Size = 16;
+    public const int Size = 16;
 
     /**
      * MinValue constant, a Short cannot contain number less than -32768.
     */
-    public const MinValue = -32768;
+    public const int MinValue = -32768;
 
     /**
      * MaxValue constant, a Short cannot contain number greater than 32767.
     */
-    public const MaxValue = 32767;
+    public const int MaxValue = 32767;
 
     /**
      * Constructor of Short Class, initializes the Short wrapper class.
@@ -78,6 +78,7 @@ final class Short extends Number
      * @access public
      * @return Byte
      */
+    #[\Override]
     public function toByte()
     {
         if ($this->value < Byte::MinValue or $this->value > Byte::MaxValue) {

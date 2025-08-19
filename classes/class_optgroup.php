@@ -65,6 +65,7 @@ class OptGroup extends GUIContainer
      * @access public
      * @return Void
      */
+    #[\Override]
     public function add(Option $option, $index = -1)
     {
         if ($option->getValue()) {
@@ -78,6 +79,7 @@ class OptGroup extends GUIContainer
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string) new String("This is an instance of Mysidia OptGroup class.");

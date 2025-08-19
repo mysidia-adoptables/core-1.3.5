@@ -27,6 +27,7 @@ class HTMLPurifier_HTMLModule_Edit extends HTMLPurifier_HTMLModule
     // separator, see getChildDef for parsing)
 
     public $defines_child_def = true;
+    #[\Override]
     public function getChildDef($def)
     {
         if ($def->content_model_type != 'chameleon') {

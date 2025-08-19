@@ -193,6 +193,7 @@ abstract class Smarty_CacheResource_Custom extends Smarty_CacheResource
      * @param Smarty_Template_Cached $cached cached object
      * @return booelan true or false if cache is locked
      */
+    #[\Override]
     public function hasLock(Smarty $smarty, Smarty_Template_Cached $cached)
     {
         $id = $cached->filepath;
@@ -212,6 +213,7 @@ abstract class Smarty_CacheResource_Custom extends Smarty_CacheResource
      * @param Smarty $smarty Smarty object
      * @param Smarty_Template_Cached $cached cached object
      */
+    #[\Override]
     public function acquireLock(Smarty $smarty, Smarty_Template_Cached $cached)
     {
         $cached->is_locked = true;
@@ -227,6 +229,7 @@ abstract class Smarty_CacheResource_Custom extends Smarty_CacheResource
      * @param Smarty $smarty Smarty object
      * @param Smarty_Template_Cached $cached cached object
      */
+    #[\Override]
     public function releaseLock(Smarty $smarty, Smarty_Template_Cached $cached)
     {
         $cached->is_locked = false;

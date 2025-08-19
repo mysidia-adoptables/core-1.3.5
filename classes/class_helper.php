@@ -34,6 +34,7 @@ abstract class Helper extends MysObject
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return (string) new MysString("This is an instance of Mysidia Helper class.");

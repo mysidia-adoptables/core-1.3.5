@@ -3,6 +3,7 @@
 class HTMLPurifier_URIFilter_DisableExternalResources extends HTMLPurifier_URIFilter_DisableExternal
 {
     public $name = 'DisableExternalResources';
+    #[\Override]
     public function filter(&$uri, $config, $context)
     {
         if (!$context->get('EmbeddedURI', true)) {

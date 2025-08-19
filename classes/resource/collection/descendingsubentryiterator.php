@@ -54,6 +54,7 @@ final class DescendingSubEntryIterator extends SubMapIterator
      * @access public
      * @return Void
      */
+    #[\Override]
     public function remove()
     {
         $this->removeDescending();

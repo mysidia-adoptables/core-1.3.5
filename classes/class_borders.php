@@ -139,6 +139,7 @@ class Borders extends Border
      * @access public
      * @return Void
      */
+    #[\Override]
     public function render()
     {
         if (!$this->renderer->getRender()) {
@@ -157,6 +158,7 @@ class Borders extends Border
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string) new String("This is an instance of Mysidia Borders class.");

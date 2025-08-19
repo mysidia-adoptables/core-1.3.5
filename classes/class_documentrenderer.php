@@ -76,6 +76,7 @@ class DocumentRenderer extends GUIRenderer
      * @access public
      * @return DocumentRenderer
      */
+    #[\Override]
     public function renderText()
     {
         $this->setRender($this->currentText);

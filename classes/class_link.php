@@ -306,6 +306,7 @@ class Link extends GUIAccessory
      * @access public
      * @return Void
      */
+    #[\Override]
     public function render()
     {
         if ($this->renderer->getStatus() == "ready") {
@@ -326,6 +327,7 @@ class Link extends GUIAccessory
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return "This is an instance of Mysidia Link class.";

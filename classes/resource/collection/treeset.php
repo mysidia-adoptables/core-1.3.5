@@ -70,6 +70,7 @@ class TreeSet extends MapSet implements NavigableSettable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function addAll(Collective $collection)
     {
         if ($this->map->size() == 0 and $collection->size() > 0 and $collection instanceof SortedSettable and $this->map instanceof TreeMap) {
@@ -112,6 +113,7 @@ class TreeSet extends MapSet implements NavigableSettable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function contains(Objective $object)
     {
         return $this->map->containsKey($object);
@@ -253,6 +255,7 @@ class TreeSet extends MapSet implements NavigableSettable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function remove(Objective $object)
     {
         return ($this->map->remove($object) == $this->dummy);
@@ -265,6 +268,7 @@ class TreeSet extends MapSet implements NavigableSettable
      * @access public
      * @return Settable
      */
+    #[\Override]
     public function subSet(Objective $fromElement, Objective $toElement)
     {
         return $this->subSets($fromElement, true, $toElement, false);

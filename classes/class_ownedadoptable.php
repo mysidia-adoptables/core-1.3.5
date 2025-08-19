@@ -103,6 +103,7 @@ class OwnedAdoptable extends Adoptable
         $this->totalclicks = $clicks;
     }
 
+    #[\Override]
     public function getCode()
     {
         return $this->code;
@@ -168,6 +169,7 @@ class OwnedAdoptable extends Adoptable
         $this->isfrozen = $frozen;
     }
 
+    #[\Override]
     public function getGender($fetchMode = "")
     {
         if ($fetchMode == Model::GUI) {
@@ -322,6 +324,7 @@ class OwnedAdoptable extends Adoptable
         }
     }
 
+    #[\Override]
     protected function save($field, $value)
     {
         $mysidia = Registry::get("mysidia");

@@ -75,6 +75,7 @@ class HashSet extends MapSet
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function contains(Objective $object)
     {
         return $this->map->containsKey($object);
@@ -96,6 +97,7 @@ class HashSet extends MapSet
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function remove(Objective $object)
     {
         return ($this->map->remove($object) == $this->dummy);
@@ -108,6 +110,7 @@ class HashSet extends MapSet
      * @access public
      * @return Settable
      */
+    #[\Override]
     public function subSet(Objective $fromElement, Objective $toElement): never
     {
         throw new UnsupportedOperationException();

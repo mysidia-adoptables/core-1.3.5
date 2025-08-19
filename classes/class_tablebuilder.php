@@ -291,6 +291,7 @@ class TableBuilder extends Table
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return (string) new MysString("This is The TableBuilder class.");

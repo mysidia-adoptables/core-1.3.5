@@ -45,6 +45,7 @@ class Adoptable extends Model
         return $this->type;
     }
 
+    #[\Override]
     public function getClass()
     {
         return $this->class;

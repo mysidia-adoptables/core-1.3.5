@@ -113,6 +113,7 @@ abstract class TableContainer extends GUIContainer
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return (string) new MysString("This is The TableContainer class.");

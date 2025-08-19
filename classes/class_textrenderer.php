@@ -148,6 +148,7 @@ class TextRenderer extends GUIRenderer
      * @access public
      * @return Void
      */
+    #[\Override]
     public function end()
     {
         if ($this->tag == "textarea") {

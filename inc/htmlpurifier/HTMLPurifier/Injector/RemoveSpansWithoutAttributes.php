@@ -16,6 +16,7 @@ class HTMLPurifier_Injector_RemoveSpansWithoutAttributes extends HTMLPurifier_In
     private $config;
     private $context;
 
+    #[\Override]
     public function prepare($config, $context)
     {
         $this->attrValidator = new HTMLPurifier_AttrValidator();
@@ -53,6 +54,7 @@ class HTMLPurifier_Injector_RemoveSpansWithoutAttributes extends HTMLPurifier_In
         }
     }
 
+    #[\Override]
     public function handleEnd(&$token)
     {
         if ($token->markForDeletion) {

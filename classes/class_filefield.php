@@ -104,6 +104,7 @@ class FileField extends TextField
      * @access public
      * @return Void
      */
+    #[\Override]
     public function render()
     {
         if ($this->renderer->getStatus() == "ready") {
@@ -130,6 +131,7 @@ class FileField extends TextField
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string) new String("This is an instance of Mysidia FileField class.");

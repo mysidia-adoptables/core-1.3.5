@@ -88,6 +88,7 @@ class ListRenderer extends GUIRenderer
      * @access public
      * @return ListRenderer
      */
+    #[\Override]
     public function start()
     {
         if ($this->tag == "datalist") {

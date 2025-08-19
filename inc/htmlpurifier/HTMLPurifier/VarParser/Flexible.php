@@ -7,6 +7,7 @@
  */
 class HTMLPurifier_VarParser_Flexible extends HTMLPurifier_VarParser
 {
+    #[\Override]
     protected function parseImplementation($var, $type, $allow_null)
     {
         if ($allow_null && $var === null) {

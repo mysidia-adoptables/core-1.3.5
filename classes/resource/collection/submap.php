@@ -279,6 +279,7 @@ abstract class SubMap extends Map implements NavigableMappable
      * @return Boolean
      * @final
      */
+    #[\Override]
     final public function containsKey(Objective $key = null)
     {
         return ($this->inRange($key) and $this->map->containsKey($key));
@@ -364,6 +365,7 @@ abstract class SubMap extends Map implements NavigableMappable
      * @return Objective
      * @final
      */
+    #[\Override]
     public function get(Objective $key)
     {
         return (!$this->inRange($key) ? null : $this->map->get($key));
@@ -463,6 +465,7 @@ abstract class SubMap extends Map implements NavigableMappable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function isEmpty()
     {
         return (($this->fromStart and $this->toEnd) ? $this->map->isEmpty() : $this->entrySet()->isEmpty());
@@ -473,6 +476,7 @@ abstract class SubMap extends Map implements NavigableMappable
      * @access public
      * @return EntrySubIterator
      */
+    #[\Override]
     public function iterator()
     {
         return $this->entrySet()->iterator();
@@ -485,6 +489,7 @@ abstract class SubMap extends Map implements NavigableMappable
      * @return KeySet
      * @final
      */
+    #[\Override]
     final public function keySet()
     {
         return $this->navigableKeySet();
@@ -612,6 +617,7 @@ abstract class SubMap extends Map implements NavigableMappable
      * @return Objective
      * @final
      */
+    #[\Override]
     public function remove(Objective $key = null)
     {
         return (!$this->inRange($key) ? null : $this->map->remove($key));
@@ -622,6 +628,7 @@ abstract class SubMap extends Map implements NavigableMappable
      * @access public
      * @return Int
      */
+    #[\Override]
     public function size()
     {
         return (($this->fromStart and $this->toEnd) ? $this->map->size() : $this->entrySet()->size());

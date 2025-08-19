@@ -25,17 +25,17 @@ final class Char extends MysObject implements Comparable, Primitive
     /**
      * Size constant, specifies the size a byte value occupies.
     */
-    public const Size = 8;
+    public const int Size = 8;
 
     /**
      * MinValue constant, a byte cannot contain number less than -128.
     */
-    public const MinValue = '\u0000';
+    public const string MinValue = '\u0000';
 
     /**
      * MaxValue constant, a byte cannot contain number greater than 127.
     */
-    public const MaxValue = '\uFFFF';
+    public const string MaxValue = '\uFFFF';
 
     /**
      * The value property, which stores the primitive char value.
@@ -97,6 +97,7 @@ final class Char extends MysObject implements Comparable, Primitive
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return (string)$this->value;

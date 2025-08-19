@@ -71,6 +71,7 @@ class DatabaseStatement extends MysObject
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return (string) new MysString("This is The DatabaseStatement Class.");

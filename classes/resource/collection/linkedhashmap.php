@@ -63,6 +63,7 @@ class LinkedHashMap extends HashMap
      * @access public
      * @return Void
      */
+    #[\Override]
     public function addEntry($hash = 0, Objective $key = null, Objective $value = null, $index = 0)
     {
         $this->createEntry($hash, $key, $value, $index);
@@ -81,6 +82,7 @@ class LinkedHashMap extends HashMap
      * @access public
      * @return Void
      */
+    #[\Override]
     public function clear()
     {
         parent::clear();
@@ -94,6 +96,7 @@ class LinkedHashMap extends HashMap
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function containsValue(Objective $value = null)
     {
         if ($value == null) {
@@ -121,6 +124,7 @@ class LinkedHashMap extends HashMap
      * @access public
      * @return Void
      */
+    #[\Override]
     public function createEntry($hash = 0, Objective $key = null, Objective $value = null, $index = 0)
     {
         $oldEntry = $this->entries[$index];
@@ -135,6 +139,7 @@ class LinkedHashMap extends HashMap
      * @access public
      * @return EntryLinkedIterator
      */
+    #[\Override]
     public function entryIterator()
     {
         return new EntryLinkedIterator($this);
@@ -146,6 +151,7 @@ class LinkedHashMap extends HashMap
      * @access public
      * @return Objective
      */
+    #[\Override]
     public function get(Objective $key)
     {
         $entry = $this->getEntry($key);
@@ -181,6 +187,7 @@ class LinkedHashMap extends HashMap
      * @access public
      * @return KeyLinkedIterator
      */
+    #[\Override]
     public function keyIterator()
     {
         return new KeyLinkedIterator($this);
@@ -203,6 +210,7 @@ class LinkedHashMap extends HashMap
      * @access public
      * @return Void
      */
+    #[\Override]
     public function transfer(Arrays $newEntries)
     {
         $newCapacity = $newEntries->length();
@@ -218,6 +226,7 @@ class LinkedHashMap extends HashMap
      * @access public
      * @return ValueLinkedIterator
      */
+    #[\Override]
     public function valueIterator()
     {
         return new ValueLinkedIterator($this);

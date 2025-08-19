@@ -90,6 +90,7 @@ class MessageTableHelper extends TableHelper
      * @access protected
      * @return String
      */
+    #[\Override]
     protected function getDeleteLink($param)
     {
         $path = Registry::get("path");
@@ -200,6 +201,7 @@ class MessageTableHelper extends TableHelper
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string) new String("This is an instance of Mysidia ItemTableHelper class.");

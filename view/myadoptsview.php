@@ -6,6 +6,7 @@ use Resource\Collection\LinkedHashMap;
 
 class MyadoptsView extends View
 {
+    #[\Override]
     public function index()
     {
         $mysidia = Registry::get("mysidia");

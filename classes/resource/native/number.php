@@ -180,6 +180,7 @@ abstract class Number extends MysObject implements Comparable, Primitive
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return (string)$this->value;

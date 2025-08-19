@@ -35,6 +35,7 @@ class KeySet extends KeyMapSet
      * @access public
      * @return KeyIterator
      */
+    #[\Override]
     public function iterator()
     {
         return $this->map->keyIterator();
@@ -46,6 +47,7 @@ class KeySet extends KeyMapSet
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function remove(Objective $object)
     {
         return $this->map->removeKey($object);

@@ -100,6 +100,7 @@ class TCol extends TableContainer
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string) new String("This is The Table Column class.");

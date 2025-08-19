@@ -65,6 +65,7 @@ class Smarty_Internal_Resource_Extends extends Smarty_Resource
     *
     * @param Smarty_Template_Source $source source object
     */
+    #[\Override]
     public function populateTimestamp(Smarty_Template_Source $source)
     {
         $source->exists = true;

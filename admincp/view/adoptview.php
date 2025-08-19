@@ -2,6 +2,7 @@
 
 class ACPAdoptView extends View
 {
+    #[\Override]
     public function index()
     {
         parent::index();

@@ -25,32 +25,32 @@ final class Float extends Number
     /**
      * Size constant, specifies the size a float value occupies.
     */
-    public const Size = 32;
+    public const int Size = 32;
 
     /**
      * Base constant, stores the base used for exponent.
     */
-    public const Base = 10;
+    public const int Base = 10;
 
     /**
      * MinCoeff constant, specifies the coefficient for minimum exponent.
     */
-    public const MinCoeff = 1.4;
+    public const float MinCoeff = 1.4;
 
     /**
      * MaxCoeff constant, specifies the coefficient for maximum exponent.
     */
-    public const MaxCoeff = 3.4;
+    public const float MaxCoeff = 3.4;
 
     /**
      * MinExp constant, defines the minimum allowable exponent.
     */
-    public const MinExp = -45;
+    public const int MinExp = -45;
 
     /**
      * MaxExp constant, defines the maximum allowable exponent.
     */
-    public const MaxExp = 38;
+    public const int MaxExp = 38;
 
 
     /**
@@ -104,6 +104,7 @@ final class Float extends Number
      * @access public
      * @return Byte
      */
+    #[\Override]
     public function toByte()
     {
         if ($this->intValue() < Byte::MinValue or $this->intValue() > Byte::MaxValue) {
@@ -117,6 +118,7 @@ final class Float extends Number
      * @access public
      * @return Short
      */
+    #[\Override]
     public function toShort()
     {
         if ($this->intValue() < Short::MinValue or $this->intValue() > Short::MaxValue) {
@@ -130,6 +132,7 @@ final class Float extends Number
      * @access public
      * @return Integer
      */
+    #[\Override]
     public function toInteger()
     {
         if ($this->intValue() < Integer::MinValue or $this->intValue() > Integer::MaxValue) {
@@ -143,6 +146,7 @@ final class Float extends Number
      * @access public
      * @return Long
      */
+    #[\Override]
     public function toLong()
     {
         if ($this->intValue() < Long::MinValue or $this->intValue() > Long::MaxValue) {

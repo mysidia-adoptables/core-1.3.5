@@ -126,6 +126,7 @@ abstract class InputComponent extends GUIComponent
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return "This is the InputComponent Class.";

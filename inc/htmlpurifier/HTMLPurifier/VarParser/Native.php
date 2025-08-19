@@ -7,6 +7,7 @@
  */
 class HTMLPurifier_VarParser_Native extends HTMLPurifier_VarParser
 {
+    #[\Override]
     protected function parseImplementation($var, $type, $allow_null)
     {
         return $this->evalExpression($var);

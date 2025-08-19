@@ -14,6 +14,7 @@ class HTMLPurifier_URIScheme_data extends HTMLPurifier_URIScheme
         'image/png' => true,
         ];
 
+    #[\Override]
     public function validate(&$uri, $config, $context)
     {
         $result = explode(',', (string) $uri->path, 2);

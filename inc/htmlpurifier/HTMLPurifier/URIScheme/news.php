@@ -7,6 +7,7 @@ class HTMLPurifier_URIScheme_news extends HTMLPurifier_URIScheme
 {
     public $browsable = false;
 
+    #[\Override]
     public function validate(&$uri, $config, $context)
     {
         parent::validate($uri, $config, $context);

@@ -63,6 +63,7 @@ abstract class GUIElement extends GUI implements Renderable
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string) new String("This is the GUIElement Class.");

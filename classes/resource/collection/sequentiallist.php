@@ -79,6 +79,7 @@ abstract class SequentialList extends Lists
      * @access public
      * @return Void
      */
+    #[\Override]
     public function insertAll($index, Collective $collection)
     {
         try {
@@ -100,6 +101,7 @@ abstract class SequentialList extends Lists
      * @access public
      * @return ListIterator
      */
+    #[\Override]
     public function iterator()
     {
         return $this->listIterator(0);
@@ -126,6 +128,7 @@ abstract class SequentialList extends Lists
      * @access public
      * @return ListIterator
      */
+    #[\Override]
     public function listIterator($index)
     {
         throw \UNSUPPORTEDOPERATIONEXCEPTION;

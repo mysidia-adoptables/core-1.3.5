@@ -184,6 +184,7 @@ class IFrame extends GUIAccessory
      * @access public
      * @return String
      */
+    #[\Override]
     public function render()
     {
         if ($this->renderer->getStatus() == "ready") {
@@ -198,6 +199,7 @@ class IFrame extends GUIAccessory
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return "This is The IFrame class.";

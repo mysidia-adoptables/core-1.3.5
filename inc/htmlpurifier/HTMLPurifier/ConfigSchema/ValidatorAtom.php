@@ -8,17 +8,11 @@
  */
 class HTMLPurifier_ConfigSchema_ValidatorAtom
 {
-    protected $context;
-    protected $obj;
-    protected $member;
     protected $contents;
 
-    public function __construct($context, $obj, $member)
+    public function __construct(protected $context, protected $obj, protected $member)
     {
-        $this->context     = $context;
-        $this->obj         = $obj;
-        $this->member      = $member;
-        $this->contents    = & $obj->$member;
+        $this->contents    = & $this->obj->{$this->member};
     }
 
     public function assertIsString()

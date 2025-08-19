@@ -24,17 +24,17 @@ final class Byte extends Number
     /**
      * Size constant, specifies the size a byte value occupies.
     */
-    public const Size = 8;
+    public const int Size = 8;
 
     /**
      * MinValue constant, a byte cannot contain number less than -128.
     */
-    public const MinValue = -128;
+    public const int MinValue = -128;
 
     /**
      * MaxValue constant, a byte cannot contain number greater than 127.
     */
-    public const MaxValue = 127;
+    public const int MaxValue = 127;
 
     /**
      * Constructor of Byte Class, initializes the Byte wrapper class.

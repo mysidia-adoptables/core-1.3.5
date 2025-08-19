@@ -12,6 +12,7 @@
 
 class HTMLPurifier_Lexer_PH5P extends HTMLPurifier_Lexer_DOMLex
 {
+    #[\Override]
     public function tokenizeHTML($html, $config, $context)
     {
         $new_html = $this->normalize($html, $config, $context);

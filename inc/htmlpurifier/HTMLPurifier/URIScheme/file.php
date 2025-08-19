@@ -9,6 +9,7 @@ class HTMLPurifier_URIScheme_file extends HTMLPurifier_URIScheme
     // machines, so placing them as an img src is incorrect.
     public $browsable = false;
 
+    #[\Override]
     public function validate(&$uri, $config, $context)
     {
         parent::validate($uri, $config, $context);

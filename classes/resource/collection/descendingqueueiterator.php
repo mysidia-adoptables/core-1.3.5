@@ -38,6 +38,7 @@ class DescendingQueueIterator extends DequeIterator
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function hasNext()
     {
         return ($this->cursor != $this->fence);
@@ -48,6 +49,7 @@ class DescendingQueueIterator extends DequeIterator
      * @access public
      * @return Objective
      */
+    #[\Override]
     public function next()
     {
         if (!$this->hasNext()) {
@@ -65,6 +67,7 @@ class DescendingQueueIterator extends DequeIterator
      * @access public
      * @return Void
      */
+    #[\Override]
     public function remove()
     {
         if ($this->last < 0) {

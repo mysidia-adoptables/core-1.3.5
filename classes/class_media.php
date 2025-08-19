@@ -181,6 +181,7 @@ class Media extends GUIAccessory implements Resizable
      * @access public
      * @return Void
      */
+    #[\Override]
     public function render()
     {
         if ($this->renderer->getStatus() == "ready") {
@@ -195,6 +196,7 @@ class Media extends GUIAccessory implements Resizable
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string) new String("This is an instance of Mysidia Media class.");

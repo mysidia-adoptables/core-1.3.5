@@ -66,6 +66,7 @@ class Widget extends GUI implements Renderable
      * @access public
      * @return String
      */
+    #[\Override]
     public function getID()
     {
         return $this->wid;

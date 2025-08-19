@@ -237,6 +237,7 @@ class Image extends GUIAccessory implements Resizable
      * @access public
      * @return String
      */
+    #[\Override]
     public function render()
     {
         if ($this->renderer->getStatus() == "ready") {
@@ -255,6 +256,7 @@ class Image extends GUIAccessory implements Resizable
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return "This is an instance of Mysidia Image class.";

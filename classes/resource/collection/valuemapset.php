@@ -36,6 +36,7 @@ class ValueMapSet extends MapSet
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function contains(Objective $object)
     {
         return $this->map->containsValue($object);

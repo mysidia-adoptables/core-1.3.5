@@ -8,6 +8,7 @@ class HTMLPurifier_Injector_RemoveEmpty extends HTMLPurifier_Injector
     private $removeNbsp;
     private $removeNbspExceptions;
 
+    #[\Override]
     public function prepare($config, $context)
     {
         parent::prepare($config, $context);

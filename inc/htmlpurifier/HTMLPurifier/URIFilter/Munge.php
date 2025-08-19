@@ -11,6 +11,7 @@ class HTMLPurifier_URIFilter_Munge extends HTMLPurifier_URIFilter
 
     protected $replace = [];
 
+    #[\Override]
     public function prepare($config)
     {
         $this->target    = $config->get('URI.' . $this->name);

@@ -104,6 +104,7 @@ class TableRenderer extends GUIRenderer
      * @access public
      * @return TableRenderer
      */
+    #[\Override]
     public function renderText()
     {
         if (!is_null($this->component->getText())) {
@@ -217,6 +218,7 @@ class TableRenderer extends GUIRenderer
      * @access public
      * @return GUIRenderer
      */
+    #[\Override]
     public function renderCSS()
     {
         $this->setRender(" style='");

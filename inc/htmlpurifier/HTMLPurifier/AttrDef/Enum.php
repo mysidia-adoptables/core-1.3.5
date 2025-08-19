@@ -46,6 +46,7 @@ class HTMLPurifier_AttrDef_Enum extends HTMLPurifier_AttrDef
      *      valid values. Example: "foo,bar,baz". Prepend "s:" to make
      *      case sensitive
      */
+    #[\Override]
     public function make($string)
     {
         if (strlen((string) $string) > 2 && $string[0] == 's' && $string[1] == ':') {

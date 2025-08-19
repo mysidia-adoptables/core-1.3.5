@@ -18,6 +18,7 @@ class HTMLPurifier_AttrDef_URI extends HTMLPurifier_AttrDef
         $this->embedsResource = (bool) $embeds_resource;
     }
 
+    #[\Override]
     public function make($string)
     {
         $embeds = (bool) $string;

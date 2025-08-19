@@ -54,6 +54,7 @@ class LinkedListIterator extends ListIterator
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function add(Objective $object)
     {
         $this->prev = null;
@@ -70,6 +71,7 @@ class LinkedListIterator extends ListIterator
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function hasPrevious()
     {
         return ($this->cursor > 0);
@@ -80,6 +82,7 @@ class LinkedListIterator extends ListIterator
      * @access public
      * @return Objective
      */
+    #[\Override]
     public function next()
     {
         if (!$this->hasNext()) {
@@ -96,6 +99,7 @@ class LinkedListIterator extends ListIterator
      * @access public
      * @return Objective
      */
+    #[\Override]
     public function previous()
     {
         if (!$this->hasPrevious()) {
@@ -112,6 +116,7 @@ class LinkedListIterator extends ListIterator
      * @access public
      * @return Void
      */
+    #[\Override]
     public function remove()
     {
         if ($this->prev == null) {
@@ -134,6 +139,7 @@ class LinkedListIterator extends ListIterator
      * @access public
      * @return Void
      */
+    #[\Override]
     public function set(Objective $object)
     {
         if ($this->prev == null) {

@@ -26,6 +26,7 @@ class Smarty_Internal_Compile_Append extends Smarty_Internal_Compile_Assign
      * @param array $parameter array with compilation parameter
      * @return string compiled code
      */
+    #[\Override]
     public function compile($args, $compiler, $parameter)
     {
         // the following must be assigned at runtime because it will be overwritten in parent class

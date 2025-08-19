@@ -119,6 +119,7 @@ class Border extends Spacing
      * @access public
      * @return Void
      */
+    #[\Override]
     public function render()
     {
         if (!$this->renderer->getRender()) {
@@ -132,6 +133,7 @@ class Border extends Spacing
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string) new String("This is an instance of Mysidia Border class.");

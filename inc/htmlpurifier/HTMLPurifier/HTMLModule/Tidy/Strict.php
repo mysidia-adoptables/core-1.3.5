@@ -5,6 +5,7 @@ class HTMLPurifier_HTMLModule_Tidy_Strict extends HTMLPurifier_HTMLModule_Tidy_X
     public $name = 'Tidy_Strict';
     public $defaultLevel = 'light';
 
+    #[\Override]
     public function makeFixes()
     {
         $r = parent::makeFixes();
@@ -13,6 +14,7 @@ class HTMLPurifier_HTMLModule_Tidy_Strict extends HTMLPurifier_HTMLModule_Tidy_X
     }
 
     public $defines_child_def = true;
+    #[\Override]
     public function getChildDef($def)
     {
         if ($def->content_model_type != 'strictblockquote') {

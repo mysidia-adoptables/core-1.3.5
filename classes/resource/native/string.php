@@ -30,22 +30,22 @@ final class MysString extends MysObject implements Iterator, Primitive
     /**
      * Alpha constant, wraps a string literal of available alphabetic chars.
     */
-    public const ALPHA = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    public const string ALPHA = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
     /**
      * Alnum constant, specifies a collection of available alphanumeric chars.
     */
-    public const ALNUM = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    public const string ALNUM = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
     /**
      * Numeric constant, contains a list of available number chars.
     */
-    public const NUMERIC = '0123456789';
+    public const string NUMERIC = '0123456789';
 
     /**
      * Space constant, defines the space char.
     */
-    public const SPACE = ' ';
+    public const string SPACE = ' ';
 
     /**
      * String's hash code.
@@ -322,6 +322,7 @@ final class MysString extends MysObject implements Iterator, Primitive
      * @param MysString $string
      * @return bool true if the strings are equal
      */
+    #[\Override]
     public function equals(Objective $string)
     {
         return ($this->compareTo($string->__toString()) === 0);
@@ -413,6 +414,7 @@ final class MysString extends MysObject implements Iterator, Primitive
      * Generates a hash code for the string.
      * @return Int
      */
+    #[\Override]
     public function hashCode()
     {
         $hash = $this->hash;
@@ -890,7 +892,7 @@ final class MysString extends MysObject implements Iterator, Primitive
      */
     public function substringAfterFirst($separator, $inclusive = false)
     {
-        $incString = strstr($this->_string, $separator);
+        $incString = strstr($this->_string, (string) $separator);
         if ($incString === false) {
             return null;
         }
@@ -912,7 +914,7 @@ final class MysString extends MysObject implements Iterator, Primitive
      */
     public function substringAfterLast($separator, $inclusive = false)
     {
-        $incString = strrchr($this->_string, $separator);
+        $incString = strrchr($this->_string, (string) $separator);
         if ($incString === false) {
             return null;
         }
@@ -944,7 +946,7 @@ final class MysString extends MysObject implements Iterator, Primitive
             return $this->substring(0, $pos);
         }
 
-        $excString = strstr($this->_string, $separator, true);
+        $excString = strstr($this->_string, (string) $separator, true);
         if ($excString === false) {
             return null;
         }
@@ -1417,8 +1419,9 @@ final class MysString extends MysObject implements Iterator, Primitive
      * </code>
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
-        return $this->_string;
+        return (string) $this->_string;
     }
 }

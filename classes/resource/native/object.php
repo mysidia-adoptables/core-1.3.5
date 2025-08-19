@@ -132,8 +132,8 @@ abstract class MysObject implements Objective
      * @access public
      * @return MysString
      */
-    public function __toString()
+    public function __toString(): string
     {
-        return new MysString(static::class);
+        return (string) new MysString(static::class);
     }
 }

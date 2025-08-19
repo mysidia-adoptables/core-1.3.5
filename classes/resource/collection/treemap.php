@@ -215,6 +215,7 @@ class TreeMap extends Map implements NavigableMappable
      * @access public
      * @return Void
      */
+    #[\Override]
     public function clear()
     {
         $this->size = 0;
@@ -277,6 +278,7 @@ class TreeMap extends Map implements NavigableMappable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function containsKey(Objective $key = null)
     {
         return ($this->getEntry($key) != null);
@@ -288,6 +290,7 @@ class TreeMap extends Map implements NavigableMappable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function containsValue(Objective $value = null)
     {
         for ($entry = $this->getFirstEntry(); $entry != null; $entry = $this->successor($entry)) {
@@ -570,6 +573,7 @@ class TreeMap extends Map implements NavigableMappable
      * @access public
      * @return Objective
      */
+    #[\Override]
     public function get(Objective $key)
     {
         $entry = $this->getEntry($key);
@@ -895,6 +899,7 @@ class TreeMap extends Map implements NavigableMappable
      * @access public
      * @return KeySet
      */
+    #[\Override]
     public function keySet()
     {
         return $this->navigableKeySet();
@@ -1092,6 +1097,7 @@ class TreeMap extends Map implements NavigableMappable
      * @access public
      * @return Void
      */
+    #[\Override]
     public function putAll(Mappable $map)
     {
         $size = $map->size();
@@ -1107,6 +1113,7 @@ class TreeMap extends Map implements NavigableMappable
      * @access public
      * @return Objective
      */
+    #[\Override]
     public function remove(Objective $key = null)
     {
         $entry = $this->getEntry($key);
@@ -1209,6 +1216,7 @@ class TreeMap extends Map implements NavigableMappable
      * @access public
      * @return Int
      */
+    #[\Override]
     public function size()
     {
         return $this->size;
@@ -1308,6 +1316,7 @@ class TreeMap extends Map implements NavigableMappable
      * @access public
      * @return ValueSet
      */
+    #[\Override]
     public function valueSet()
     {
         $valueSet = ($this->valueSet == null) ? new ValueTreeSet($this) : $this->valueSet;

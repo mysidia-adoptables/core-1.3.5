@@ -5,6 +5,7 @@ use Resource\Collection\LinkedHashMap;
 
 class BreedingView extends View
 {
+    #[\Override]
     public function index()
     {
         $mysidia = Registry::get("mysidia");

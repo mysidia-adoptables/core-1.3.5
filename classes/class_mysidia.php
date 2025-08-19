@@ -23,12 +23,12 @@ final class Mysidia extends Core
     /**
      * version constant, displays the version of Mysidia Adoptables in String format.
     */
-    public const version = "1.3.5";
+    public const string version = "1.3.5";
 
     /**
      * vercode constant, reveals the version code of Mysidia Adoptables in Int format.
     */
-    public const vercode = 135;
+    public const int vercode = 135;
 
     /**
      * The path property, which is not yet fully developed at this point.

@@ -65,6 +65,7 @@ class SubList extends Lists
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function addAll(Collective $collection)
     {
         return $this->insertAll($this->size, $collection);
@@ -117,6 +118,7 @@ class SubList extends Lists
      * @access public
      * @return Void
      */
+    #[\Override]
     public function insertAll($index, Collective $collection)
     {
         $this->rangeCheck($index);
@@ -130,6 +132,7 @@ class SubList extends Lists
      * @access public
      * @return ListIterator
      */
+    #[\Override]
     public function iterator()
     {
         return $this->subListIterator();
@@ -142,6 +145,7 @@ class SubList extends Lists
      * @access public
      * @return Void
      */
+    #[\Override]
     public function removeRange($fromIndex, $toIndex)
     {
         $this->rangeCheck($index);

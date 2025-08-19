@@ -2,6 +2,7 @@
 
 class TosView extends View
 {
+    #[\Override]
     public function index()
     {
         if (isset($this->flags)) {

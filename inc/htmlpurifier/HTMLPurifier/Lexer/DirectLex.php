@@ -28,6 +28,7 @@ class HTMLPurifier_Lexer_DirectLex extends HTMLPurifier_Lexer
         return $matches[1] . htmlspecialchars((string) $matches[2], ENT_COMPAT, 'UTF-8') . $matches[3];
     }
 
+    #[\Override]
     public function tokenizeHTML($html, $config, $context)
     {
 

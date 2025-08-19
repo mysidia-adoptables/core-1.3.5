@@ -44,6 +44,7 @@ abstract class ButtonComponent extends InputComponent
      * @access public
      * @return Void
      */
+    #[\Override]
     public function setValue($value)
     {
         parent::setValue($value);
@@ -76,6 +77,7 @@ abstract class ButtonComponent extends InputComponent
      * @access public
      * @return String
      */
+    #[\Override]
     public function render()
     {
         if ($this->renderer->getStatus() == "ready") {
@@ -93,6 +95,7 @@ abstract class ButtonComponent extends InputComponent
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string) new String("This is an instance of Mysidia ButtonComponent class.");

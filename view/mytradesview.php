@@ -5,6 +5,7 @@ use Resource\Collection\LinkedList;
 
 class MytradesView extends View
 {
+    #[\Override]
     public function index()
     {
         $mysidia = Registry::get("mysidia");

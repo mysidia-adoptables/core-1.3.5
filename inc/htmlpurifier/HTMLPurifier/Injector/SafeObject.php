@@ -25,6 +25,7 @@ class HTMLPurifier_Injector_SafeObject extends HTMLPurifier_Injector
         'allowFullScreen' => true, // if omitted, assume to be 'false'
     ];
 
+    #[\Override]
     public function prepare($config, $context)
     {
         parent::prepare($config, $context);
@@ -78,6 +79,7 @@ class HTMLPurifier_Injector_SafeObject extends HTMLPurifier_Injector
         }
     }
 
+    #[\Override]
     public function handleEnd(&$token)
     {
         // This is the WRONG way of handling the object and param stacks;

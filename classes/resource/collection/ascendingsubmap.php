@@ -25,7 +25,7 @@ final class AscendingSubMap extends SubMap
     /**
      * serialID constant, it serves as identifier of the object being AscendingSubMap.
      */
-    public const SERIALID = "919286545866124006L";
+    public const string SERIALID = "919286545866124006L";
 
     /**
      * The comparator method, returns the comparator object used to order the keys in this AscendingSubMap.

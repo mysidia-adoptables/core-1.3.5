@@ -74,6 +74,7 @@ class Smarty_Internal_Resource_Eval extends Smarty_Resource_Recompiled
      * @param string $resource_name resource_name to make unique
      * @return string unique resource name
      */
+    #[\Override]
     protected function buildUniqueResourceName(Smarty $smarty, $resource_name)
     {
         return static::class . '#' .$this->decode($resource_name);

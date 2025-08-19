@@ -189,6 +189,7 @@ abstract class AppController extends Controller
      * @access public
      * @return Void
      */
+    #[\Override]
     public function setFields(HashMap $fields)
     {
         $this->fields = $fields;
@@ -201,6 +202,7 @@ abstract class AppController extends Controller
      * @access protected
      * @return Void
      */
+    #[\Override]
     public function setFlags($param, $param2 = null)
     {
         $this->frontController->setFlags($param, $param2);

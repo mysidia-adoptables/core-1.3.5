@@ -39,6 +39,7 @@ class null extends MysObject implements Primitive
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return "null";

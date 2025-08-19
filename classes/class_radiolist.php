@@ -43,6 +43,7 @@ class RadioList extends GUIContainer
      * @access public
      * @return Void
      */
+    #[\Override]
     public function add(GUIComponent $radio, $index = -1)
     {
         if ($radio->getName() != $this->name) {
@@ -71,6 +72,7 @@ class RadioList extends GUIContainer
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string) new String("This is an instance of Mysidia RadioList class.");

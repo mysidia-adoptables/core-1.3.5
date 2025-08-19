@@ -48,6 +48,7 @@ abstract class Lists extends Collection implements Listable
      * @access public
      * @return String
      */
+    #[\Override]
     public function hashCode()
     {
         $hash = new Hash();

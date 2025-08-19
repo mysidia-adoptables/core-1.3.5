@@ -114,6 +114,7 @@ class CustomDocument extends Widget implements Initializable
      * @access protected
      * @return Void
      */
+    #[\Override]
     protected function setDivision(GUIComponent $document)
     {
         $this->division = new Division();
@@ -246,6 +247,7 @@ class CustomDocument extends Widget implements Initializable
      * @access public
      * @return String
      */
+    #[\Override]
     public function render()
     {
         return $this->division->render();

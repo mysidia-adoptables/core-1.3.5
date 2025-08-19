@@ -44,6 +44,7 @@ class HTMLPurifier_AttrDef_HTML_Pixels extends HTMLPurifier_AttrDef
 
     }
 
+    #[\Override]
     public function make($string)
     {
         if ($string === '') {

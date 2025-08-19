@@ -27,6 +27,7 @@ abstract class Set extends Collection implements Settable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function equals(Objective $object)
     {
         if ($object === $this) {
@@ -46,6 +47,7 @@ abstract class Set extends Collection implements Settable
      * @access public
      * @return Int
      */
+    #[\Override]
     public function hashCode()
     {
         $hash = 0;
@@ -65,6 +67,7 @@ abstract class Set extends Collection implements Settable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function removeAll(Collective $collection)
     {
         $deleted = false;

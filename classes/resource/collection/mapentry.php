@@ -42,6 +42,7 @@ class MapEntry extends Entry
      * @access public
      * @return Int
      */
+    #[\Override]
     public function hashCode()
     {
         $keyHash = ($this->key == null) ? 0 : $this->key->hashCode();
@@ -55,6 +56,7 @@ class MapEntry extends Entry
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function initialize(Entry $entry)
     {
         $this->key = $entry->getKey();

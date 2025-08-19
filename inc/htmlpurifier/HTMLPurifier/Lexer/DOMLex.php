@@ -35,6 +35,7 @@ class HTMLPurifier_Lexer_DOMLex extends HTMLPurifier_Lexer
         $this->factory = new HTMLPurifier_TokenFactory();
     }
 
+    #[\Override]
     public function tokenizeHTML($html, $config, $context)
     {
 

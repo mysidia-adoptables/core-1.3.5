@@ -4,6 +4,7 @@ use Resource\Collection\LinkedList;
 
 class ShopView extends View
 {
+    #[\Override]
     public function index()
     {
         $document = $this->document;

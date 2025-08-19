@@ -30,6 +30,7 @@ class PrivateItem extends Item
         }
     }
 
+    #[\Override]
     public function getitem()
     {
         // This method checks if the item exists in inventory or not, not to be confused with parent class' getitem() class.

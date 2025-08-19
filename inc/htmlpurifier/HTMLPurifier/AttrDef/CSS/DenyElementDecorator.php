@@ -5,17 +5,12 @@
  */
 class HTMLPurifier_AttrDef_CSS_DenyElementDecorator extends HTMLPurifier_AttrDef
 {
-    public $def;
-    public $element;
-
     /**
      * @param $def Definition to wrap
      * @param $element Element to deny
      */
-    public function __construct($def, $element)
+    public function __construct(public $def, public $element)
     {
-        $this->def = $def;
-        $this->element = $element;
     }
     /**
      * Checks if CurrentToken is set and equal to $this->element

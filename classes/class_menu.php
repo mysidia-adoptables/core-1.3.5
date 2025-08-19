@@ -80,6 +80,7 @@ class Menu extends Widget implements Initializable
      * @access protected
      * @return Void
      */
+    #[\Override]
     protected function setDivision(GUIComponent $menuList)
     {
         $this->division = new Division();

@@ -41,6 +41,7 @@ abstract class Map extends Collection implements Mappable
      * @access public
      * @return Void
      */
+    #[\Override]
     public function clear()
     {
         $this->entrySet()->clear();
@@ -53,6 +54,7 @@ abstract class Map extends Collection implements Mappable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function contains(Objective $object)
     {
         return $this->containsValue($object);
@@ -118,6 +120,7 @@ abstract class Map extends Collection implements Mappable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function equals(Objective $object)
     {
         if ($object == $this) {
@@ -181,6 +184,7 @@ abstract class Map extends Collection implements Mappable
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function hashCode()
     {
         $hashCode = 0;
@@ -248,6 +252,7 @@ abstract class Map extends Collection implements Mappable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function remove(Objective $key = null)
     {
         $iterator = $this->entrySet()->iterator();
@@ -297,6 +302,7 @@ abstract class Map extends Collection implements Mappable
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         $iterator = $this->entrySet()->iterator();

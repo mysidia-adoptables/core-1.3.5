@@ -54,6 +54,7 @@ class HashMapEntry extends MapEntry
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function equals(Objective $object)
     {
         if (!($object instanceof HashMapEntry)) {

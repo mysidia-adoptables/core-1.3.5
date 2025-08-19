@@ -131,6 +131,7 @@ class Division extends Paragraph
      * @access public
      * @return Void
      */
+    #[\Override]
     public function add(GUIComponent $component, $index = -1)
     {
         parent::add($component, $index);
@@ -144,6 +145,7 @@ class Division extends Paragraph
      * @access public
      * @return String
      */
+    #[\Override]
     public function __toString(): string
     {
         return (string) new String("This is The Division class.");

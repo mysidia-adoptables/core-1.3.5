@@ -43,6 +43,7 @@ class Smarty_Internal_Resource_Registered extends Smarty_Resource
      * @param Smarty_Template_Source $source source object
      * @return void
      */
+    #[\Override]
     public function populateTimestamp(Smarty_Template_Source $source)
     {
         $source->timestamp = $this->getTemplateTimestamp($source);

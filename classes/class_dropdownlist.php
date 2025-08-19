@@ -111,6 +111,7 @@ class DropdownList extends GUIContainer
      * @access public
      * @return Void
      */
+    #[\Override]
     public function add(GUIComponent $option, $index = -1)
     {
         if (!($option instanceof Option) and !($option instanceof OptGroup)) {
@@ -234,6 +235,7 @@ class DropdownList extends GUIContainer
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return (string) new MysString("This is an instance of Mysidia DropDownList class.");

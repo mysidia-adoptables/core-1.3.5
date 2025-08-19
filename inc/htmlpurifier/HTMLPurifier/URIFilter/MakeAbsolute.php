@@ -7,6 +7,7 @@ class HTMLPurifier_URIFilter_MakeAbsolute extends HTMLPurifier_URIFilter
     public $name = 'MakeAbsolute';
     protected $base;
     protected $basePathStack = [];
+    #[\Override]
     public function prepare($config)
     {
         $def = $config->getDefinition('URI');

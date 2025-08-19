@@ -82,6 +82,7 @@ abstract class GUI extends MysObject
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function getClass()
     {
         return $this->class;
@@ -172,6 +173,7 @@ abstract class GUI extends MysObject
      * @access public
      * @return MysString
      */
+    #[\Override]
     public function __toString(): MysString
     {
         return (string) new MysString("This is The base GUI Class.");

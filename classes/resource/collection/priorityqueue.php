@@ -69,6 +69,7 @@ class PriorityQueue extends Queue
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function add(Objective $object)
     {
         return $this->offer($object);
@@ -79,6 +80,7 @@ class PriorityQueue extends Queue
      * @access public
      * @return Void
      */
+    #[\Override]
     public function clear()
     {
         $this->queue = new Arrays($this->size);
@@ -101,6 +103,7 @@ class PriorityQueue extends Queue
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function contains(Objective $object)
     {
         return ($this->indexOf($object) != -1);
@@ -271,6 +274,7 @@ class PriorityQueue extends Queue
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function remove(Objective $object)
     {
         $i = $this->indexOf($object);
@@ -443,6 +447,7 @@ class PriorityQueue extends Queue
      * @access public
      * @return Array
      */
+    #[\Override]
     public function toArray()
     {
         $array = $this->getArray();

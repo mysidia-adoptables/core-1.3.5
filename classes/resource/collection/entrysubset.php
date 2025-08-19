@@ -44,6 +44,7 @@ abstract class EntrySubSet extends MapSet
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function contains(Objective $object)
     {
         if (!($object instanceof MapEntry)) {
@@ -64,6 +65,7 @@ abstract class EntrySubSet extends MapSet
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function isEmpty()
     {
         $lowest = $this->map->absLowest();
@@ -76,6 +78,7 @@ abstract class EntrySubSet extends MapSet
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function remove(Objective $object)
     {
         if (!($object instanceof MapEntry)) {
@@ -100,6 +103,7 @@ abstract class EntrySubSet extends MapSet
      * @access public
      * @return Int
      */
+    #[\Override]
     public function size()
     {
         $map = $this->map->getMap();

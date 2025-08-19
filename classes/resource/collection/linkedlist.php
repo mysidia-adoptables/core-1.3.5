@@ -78,6 +78,7 @@ class LinkedList extends SequentialList implements Dequeable, Stackable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function addAll(Collective $collection)
     {
         return $this->insertAll($this->size, $collection);
@@ -110,6 +111,7 @@ class LinkedList extends SequentialList implements Dequeable, Stackable
      * @access public
      * @return Void
      */
+    #[\Override]
     public function clear()
     {
         $this->first = null;
@@ -123,6 +125,7 @@ class LinkedList extends SequentialList implements Dequeable, Stackable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function contains(Objective $object)
     {
         return ($this->indexOf($object) != -1);
@@ -134,6 +137,7 @@ class LinkedList extends SequentialList implements Dequeable, Stackable
      * @access public
      * @return Objective
      */
+    #[\Override]
     public function delete($index)
     {
         $this->rangeCheck($index);
@@ -200,6 +204,7 @@ class LinkedList extends SequentialList implements Dequeable, Stackable
      * @access public
      * @return Objective
      */
+    #[\Override]
     public function get($index)
     {
         $this->rangeCheck($index);
@@ -257,6 +262,7 @@ class LinkedList extends SequentialList implements Dequeable, Stackable
      * @access public
      * @return Int
      */
+    #[\Override]
     public function indexOf(Objective $object)
     {
         $index = 0;
@@ -285,6 +291,7 @@ class LinkedList extends SequentialList implements Dequeable, Stackable
      * @access public
      * @return Void
      */
+    #[\Override]
     public function insert($index, Objective $object)
     {
         $this->rangeCheck($index);
@@ -302,6 +309,7 @@ class LinkedList extends SequentialList implements Dequeable, Stackable
      * @access public
      * @return Void
      */
+    #[\Override]
     public function insertAll($index, Collective $collection)
     {
         $this->rangeCheck($index);
@@ -344,6 +352,7 @@ class LinkedList extends SequentialList implements Dequeable, Stackable
      * @access public
      * @return Int
      */
+    #[\Override]
     public function lastIndexOf(Objective $object)
     {
         $index = $this->size;
@@ -428,6 +437,7 @@ class LinkedList extends SequentialList implements Dequeable, Stackable
      * @access public
      * @return ListIterator
      */
+    #[\Override]
     public function listIterator($index = 0)
     {
         $this->rangeCheck($index);
@@ -586,6 +596,7 @@ class LinkedList extends SequentialList implements Dequeable, Stackable
      * @access public
      * @return Boolean
      */
+    #[\Override]
     public function remove(Objective $object = null)
     {
         $this->removeFirst($object);
@@ -666,6 +677,7 @@ class LinkedList extends SequentialList implements Dequeable, Stackable
      * @access public
      * @return Objective
      */
+    #[\Override]
     public function set($index, Objective $object)
     {
         $this->rangeCheck($index);
@@ -690,6 +702,7 @@ class LinkedList extends SequentialList implements Dequeable, Stackable
      * @access public
      * @return Array
      */
+    #[\Override]
     public function toArray()
     {
         $array = $this->getArray();

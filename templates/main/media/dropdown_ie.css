@@ -1,0 +1,20 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/dd_valid.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the assocaited (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+.ddmenu ul li a.hide, .ddmenu ul li a:visited.hide {display:none;}
+.ddmenu ul li a:hover ul li a.hide {display:none;}
+
+.ddmenu ul li a:hover {color:#fff; background:#inherit;}
+.ddmenu ul li a:hover ul {display:block; position:absolute; top:21px; left:0; width:105px;}
+.ddmenu ul li a:hover ul li a.sub {background:#inherit; color:#fff;}
+.ddmenu ul li a:hover ul li a {display:block; background:#ddd; color:#000;}
+.ddmenu ul li a:hover ul li a ul {visibility:hidden;}
+.ddmenu ul li a:hover ul li a:hover {background:#inherit; color:#000;}
+.ddmenu ul li a:hover ul li a:hover ul {visibility:visible; position:absolute; left:105px; top:0; color:#000;}
+.ddmenu ul li a:hover ul li a:hover ul.left {left:-105px;}

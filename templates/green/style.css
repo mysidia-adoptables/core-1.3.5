@@ -1,0 +1,26 @@
+body { font-family: helvetica; background-color: #59F; }
+
+br {display: block;margin: 3px 0;}
+
+#v1 {width: 20%;background-color: #3DF;position: fixed;bottom: 0;top: 0;right: 0;z-index: -1}
+#v2 {width: 40%;background-color: #4BF;position: fixed;bottom: 0;top: 0;right: 0;z-index: -2}
+#v3 {width: 60%;background-color: #59F;position: fixed;bottom: 0;top: 0;right: 0;z-index: -3}
+#v4 {width: 40%;background-color: #67F;position: fixed;bottom: 0;top: 0;left: 0;z-index: -2}
+#v5 {width: 20%;background-color: #75F;position: fixed;bottom: 0;top: 0;left: 0;z-index: -1}
+
+#h1 {height: 20%;background-color: #fff;position: fixed;right: 0;left: 0;top: 0;z-index: -1; opacity: 0.15}
+#h2 {height: 40%;background-color: #fff;position: fixed;right: 0;left: 0;top: 0;z-index: -1; opacity: 0.15}
+#h3 {height: 60%;background-color: #fff;position: fixed;right: 0;left: 0;top: 0;z-index: -1; opacity: 0.15}
+#h4 {height: 80%;background-color: #fff;position: fixed;right: 0;left: 0;top: 0;z-index: -1; opacity: 0.15}
+
+
+#content { width: 1050px; margin: auto; padding: 4px; background-color: rgba(255, 255, 255, 0.5); -webkit-border-radius: 7px; margin-top: 30px; min-height: 200px; font-size: 14px; clear: auto;}
+h1 { color: #55D; font-family: Verdana; text-align: center; margin: 0; padding: 10px; border-bottom: 2px solid white; font-size: 40px; }
+#toplist { list-style-type: none; padding: 5px 10px; margin: 0; height: 30px; font-size: 18px; border-bottom: 2px solid white; text-align: center; }
+#toplist li { line-height: 30px; padding-left: 9px; padding-right: 9px; display: inline; }
+#container { padding-top: 10px; }
+h2 { margin: 0; padding-left: 5px; color: #11D; }
+#left { width: 200px; margin: 0; padding: 10px; float: left; }
+#right { width: 800px; padding: 5px; float: right; }
+#container { clear: both; }
+a { color: #11A; text-decoration: none; }

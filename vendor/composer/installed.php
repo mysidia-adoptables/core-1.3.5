@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'mysidiaadoptables/core',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'e379761edc6587a5893c5b5d614eb91041ee68b6',
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'mysidiaadoptables/core' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'e379761edc6587a5893c5b5d614eb91041ee68b6',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'phpstan/phpstan' => array(
+            'pretty_version' => '2.1.22',
+            'version' => '2.1.22.0',
+            'reference' => '41600c8379eb5aee63e9413fe9e97273e25d57e4',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpstan/phpstan',
+            'aliases' => array(),
+            'dev_requirement' => true,
+        ),
+        'rector/rector' => array(
+            'pretty_version' => '2.1.4',
+            'version' => '2.1.4.0',
+            'reference' => 'fe613c528819222f8686a9a037a315ef9d4915b3',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../rector/rector',
+            'aliases' => array(),
+            'dev_requirement' => true,
+        ),
+    ),
+);

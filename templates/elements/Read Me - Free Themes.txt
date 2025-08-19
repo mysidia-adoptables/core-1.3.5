@@ -1,0 +1,40 @@
+// ************************************************
+// Read Me :: Free Templates by Sessions Street 
+// ************************************************
+
+<! -- Installation Steps -->
+	01 Open themename.html in a text editor
+	02 Look for the commented text in the
+	   footer to edit for your site:
+	<!-- Edit Information Here
+	// Things to edit:
+	// Site Address in the href brackets and Site Name
+	// Your e-mail or personal site address and your name
+	// Do not remove credits unless you have attained premium membership
+	// script premium information @ [url]http://www.mysidiaadoptables.com/forum/showthread.php?t=1746[/url]
+	// theme credit removal information @ [url]http://www.mysidiaadoptables.com/forum/blog.php?b=5[/url]
+
+	-->
+	03 Upload all files to your site in the templates
+	   directory
+	04 Enter your admin panel and enter the site settings
+	05 Set the new theme using templates/themename/theme.html
+	   as the address for the theme
+
+	Some themes may require customization edits to your
+	functions.php file, please see the tutorial @
+	< coming soon >
+
+<! -- Customization Information -->
+	Templates can be customized with site specific settings,
+	images, and more
+	Please contact [email]design@end-day.net[/email] for information
+
+<! -- Ordering Custom Themes -->
+	Custom themes may be ordered through [email]design@end-day.net[/email]
+	Please be prepared to include information about the site
+	and what you want the theme to include
+
+// ************************************************
+// Thank you for downloading this theme! Enjoy! 
+// ************************************************

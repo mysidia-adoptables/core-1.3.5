@@ -1,0 +1,11 @@
+{
+    "name": "mysidiaadoptables/core",
+    "description": "Mysidia Adoptables",
+    "type": "project",
+    "require-dev": {
+        "rector/rector": "^2.1"
+    },
+    "license": "Apache 2",
+    "minimum-stability": "stable",
+    "require": {}
+}

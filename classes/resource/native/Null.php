@@ -15,7 +15,7 @@ namespace Resource\Native;
  *
  */
 
-class null extends MysObject implements Primitive
+class Null extends MysObject implements Primitive
 {
     /**
      * The value property, which stores the primitive value for this Null object.
